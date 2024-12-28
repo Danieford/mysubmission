@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #002d2b;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .logo img {
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    position: relative;
+  }
+  
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: blue;
+    left: 0;
+    bottom: -2px;
+    transition: width 0.3s ease, transform 0.3s ease;
+  }
+  
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+  
+  .nav-links a:hover {
+    margin-top: 2px;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    width: 500px;
+  }
+  
+  .search-bar input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .search-bar button {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .search-bar .search-btn {
+    background-color: #00796b;
+    color: white;
+    border-radius: 0 20px 20px 0;
+  }
+  
+  .search-bar .clear-btn {
+    background-color: #00796b;
+    color: white;
+    margin-left: 5px;
+    border-radius: 20px;
+  }
+  
+  #main-content {
+    margin-left: 15%; /* Left margin for spacing */
+    padding-top: 30px;
+    font-size:50px;
+    color:white;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+  
+  #main-content div {
+    margin-bottom: 10px;
+  }
+
+  #mainStuff{
+    
+        background-image: url('landmark.jpg');
+        background-size: cover;       /* Ensures the image covers the entire section */
+        background-position: center;  /* Centers the image */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        height: 100vh;                /* Makes the section fill the viewport height (optional) */
+      
+      
+  }
+  
+  #description{
+    margin-top: 30px;
+    margin-left: 20px;
+   font-weight:100;
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .submission .book-btn{
+    font-size: medium;
+    background-color: #00796b;
+    color: white;
+    margin-left: 5px;
+    border-style: none;
+    
+  }
+  .team{
+    margin-top: 30px;
+display: flex;
+
+
+  }
+
+  .skill{
+    border: 1px solid gray;
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  margin: 50px;
+  padding: 10px;
+  width: 2in;
+  font-size: 20px;
+  box-shadow: 0 3px 10px gray;
+  }
+
+  .skill h6 {
+    align-items: center;
+    font-size: 15px;
+    margin-block-start: 8px;
+    margin-block-end: 5px;
+    font-weight: bold;
+  } 
+
+  .skill p {
+    align-items: center;
+    font-weight: 100;
+    font-size: 15px;
+    color: rgb(176, 206, 227);
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+  } 
+
+.team button{
+  background-color:darkblue;
+  border: 1px solid white;
+  color:white;
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  width: 2in;
+  font-size: 20px;
+}
